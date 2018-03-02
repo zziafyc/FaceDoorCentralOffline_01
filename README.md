@@ -1,2 +1,2 @@
-# FaceDoorCentral
-这是晶合项目人脸声纹机
+# FaceDoorCentralOffline_01
+这个是适配Rk3288，android5.1系统的人脸声纹识别系统
