@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/mid_button_selector"
+              android:focusableInTouchMode="true"
+              android:orientation="horizontal">
+    <!--
+        android:textColor="@color/edit_text_color_bright_bg"
+        android:textColorHint="@color/edit_text_color_bright_bg"
+    -->
+    <EditText
+        android:id="@+id/dropview_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_weight="1"
+        android:height="35dp"
+        android:background="@null"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"/>
+
+    <RelativeLayout
+        android:id="@+id/img_rv"
+        android:layout_width="35dp"
+        android:layout_height="35dp">
+
+        <ImageView
+            android:id="@+id/dropview_image"
+            android:layout_width="20dp"
+            android:layout_height="10dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/express2"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+
+</LinearLayout>

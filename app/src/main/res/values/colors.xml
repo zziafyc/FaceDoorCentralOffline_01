@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="black">#000000</color>
+    <color name="alphblack">#af000000</color>
+    <color name="face_title_bg">#66000000</color>
+    <color name="qq_content">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="about_text_color3">#FFFFFF</color>
+    <color name="about_text_color4">#4675FF</color>
+	<color name="title_text_color">#ced2e7</color>
+	<color name="text_color_gray">#a1b0c3</color>
+	<color name="text_color_dark_gray">#5f84bc</color>
+	<color name="text_color_bright_gray">#7ec1ff</color>
+    <color name="text_color_bright_blue">#00baff</color>
+    <color name="text_color_bright_green">#8cd97c</color>
+    <color name="edit_text_color_dark_bg">#4868d1</color>
+    <color name="edit_text_color_bright_bg">#5f91e4</color>
+    <color name="edit_hint_color">#4b6cd8</color>
+    <color name="error_text_color_red">#dc8348</color>
+    <color name="icon_border_color_blue">#3759c1</color>
+    <color name="icon_border_color_light_blue">#328cd4</color>
+    <color name="submit_btn_normal">#333333</color>
+    <color name="submit_btn_pressed">#1495F7</color>
+    
+    <color name="radio_default">#121212</color>
+    <color name="radio_checked">#FF00ff</color>
+    
+    <color name="color_account_txt">#808185</color>
+    <color name="color_user_center_account_txt">#2b2b2b</color>
+    <color name="text_color">#121212</color>
+    <color name="password">#00EE00</color>
+    <color name="listview">#7FFFD4</color>
+    <color name="list">#D1EEEE</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorTitleGrey">#222222</color>
+</resources>

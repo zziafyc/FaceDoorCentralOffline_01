@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bglight"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_app_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_manage_group"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn"
+            android:text="@string/manage_group"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn"
+            android:text="@string/register"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/btn_query"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn"
+            android:text="@string/query"
+            android:textColor="@color/white"
+            android:textSize="25sp"/>
+    </LinearLayout>
+</LinearLayout>

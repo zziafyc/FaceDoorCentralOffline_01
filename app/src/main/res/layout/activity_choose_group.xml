@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglight">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/common_app_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/all_border"
+                android:gravity="center"
+                android:text="组ID"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/all_border"
+                android:gravity="center"
+                android:text="组名"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/all_border"
+                android:gravity="center"
+                android:text="是否选择"
+                android:textColor="@color/white"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/groupsLv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:scrollbars="none"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/chooseIv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dis_60"
+        android:layout_marginRight="@dimen/dis_60"
+        android:background="@drawable/chooseall3"/>
+</RelativeLayout>

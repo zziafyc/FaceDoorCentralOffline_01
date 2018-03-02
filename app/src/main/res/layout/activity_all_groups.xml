@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglight"
+    android:orientation="vertical"
+    tools:context="com.example.facedoor.AllGroupsActivity">
+
+    <include layout="@layout/common_app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/all_border"
+            android:gravity="center"
+            android:text="组ID"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/all_border"
+            android:gravity="center"
+            android:text="组名"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_groups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:divider="@null"
+        android:visibility="visible">
+
+    </ListView>
+
+
+</LinearLayout>

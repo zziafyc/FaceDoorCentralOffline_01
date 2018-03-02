@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglight"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="@string/vocalverityactivity"
+            android:textColor="#7FFFD4"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_result"
+        style="@style/textStyle"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/mid_button_selector"
+        android:gravity="center"
+        android:maxLines="4"
+        android:minLines="4"
+        android:textColor="#7FFFD4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/isv_getpassword"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/btn"
+            android:text="获取密码"
+            android:textColor="#7FFFD4"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/isv_search"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="60dp"
+            android:background="@drawable/btn"
+            android:text="查询模型"
+            android:textColor="#7FFFD4"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/isv_register"
+            android:layout_width="320dp"
+            android:layout_height="60dp"
+            android:background="@drawable/btn"
+            android:text="注册"
+            android:textColor="#7FFFD4"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showPwd"
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#7FFFD4"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/showMsg"
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#7FFFD4"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/showRegFbk"
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#7FFFD4"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/recordTime"
+        style="@style/textStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#7FFFD4"
+        android:textSize="20sp" />
+
+</LinearLayout>

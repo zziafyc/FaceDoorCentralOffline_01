@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 下拉输入框 -->
+    <declare-styleable name="DropEditText">
+        <attr name="drawableRight" format="reference"/>
+        <attr name="dropMode">
+            <enum name="flower_parent" value="0"/>
+            <enum name="wrap_content" value="1"/>
+        </attr>
+        <attr name="hint" format="string|reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CircularImage">
+        <attr name="border_width" format="dimension"/>
+        <attr name="border_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="SlideUnlockButton">
+
+        <!-- 开关背景图片的属性, 引用的是R.drawable.xx. -->
+        <attr name="slideUnlockBackgroundResource" format="reference"/>
+
+        <!-- 开关滑动块图片的属性, 引用的是R.drawable.xx. -->
+        <attr name="slideUnlockBlockResource" format="reference"/>
+
+        <!-- 开关当前的状态的属性, true 打开, false 关闭 -->
+        <attr name="unLockState" format="boolean"/>
+    </declare-styleable>
+</resources>

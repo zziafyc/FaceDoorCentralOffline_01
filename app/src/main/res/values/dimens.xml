@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--宽高用dis表示，通常指组件的宽高-->
+    <dimen name="dis_60">60dp</dimen>
+    <dimen name="dis_100">100dp</dimen>
+    <dimen name="dis_450">450dp</dimen>
+
+    <!--边距用margin表示，通常指组件之间的边距-->
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="margin_40">40dp</dimen>
+
+
+    <!--边距用font表示，通常指字体的大小-->
+    <dimen name="font_12">12sp</dimen>
+    <dimen name="font_16">16sp</dimen>
+    <dimen name="font_30">30sp</dimen>
+
+</resources>

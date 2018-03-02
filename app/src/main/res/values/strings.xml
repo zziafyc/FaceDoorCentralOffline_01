@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">人脸声纹机</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">退出</string>
+    <string name="appid">57e1115d</string>
+    <!-- MainActivity -->
+    <string name="do_admin">管理</string>
+    <string name="do_start">启动</string>
+    <string name="error_pwd">密码错</string>
+    <!-- AdminAcitvity -->
+    <string name="register">人员管理</string>
+    <string name="manage_group">组和服务器管理</string>
+    <string name="query">查询</string>
+        <!-- VocalVerifyActivity -->
+    <string name="vocalverityactivity">声纹注册界面</string>
+    <string name="vocalverify"> 声纹注册</string>
+    <string name="moxing">模型认证</string>
+    <string name="presstotalk">模型删除</string>
+    <string name="yanzheng">声纹验证界面</string>
+
+    <!--create by fyc-->
+    <string name="inputUserName">请输入用户名</string>
+    <string name="password">密码</string>
+
+    <string name="hi_str">Hi，你现在可以说 \"%1$s\" 来唤醒我</string>
+    <string name="hi_str2">Hi，你现在可以说 \"%1$s\" 或 \"%2$s\" 来唤醒我</string>
+    <string name="update_sdk_title">更新sdk</string>
+    <string name="update_sdk_message">当前sdk版本过低，和dui平台上的dui内核不匹配，请更新sdk</string>
+    <string name="update_sdk_ok">确定</string>
+    <string name="update_sdk_cancel">退出</string>
+    <string name="update_product_title">更新产品版本</string>
+    <string name="update_product_message">当前产品中内核资源版本过低，请前往DUI控制台对应的产品中，选择最新的内核资源版本并重新发布产品。</string>
+    <string name="update_product_ok">确定</string>
+    <string name="update_product_cancel">退出</string>
+</resources>

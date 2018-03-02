@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bglight"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_app_bar"/>
+
+    <ListView
+        android:id="@+id/lv_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#FFFFFF">
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_query_users"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/btn"
+        android:text="查询所有组"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"/>
+
+    <Button
+        android:id="@+id/btn_query_local_users"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn"
+        android:text="查询本机用户"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"/>
+
+</LinearLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/register_layout"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bglight"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_app_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="人脸注册界面"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/online_img"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/gg"/>
+
+    <LinearLayout
+        android:id="@+id/online_groups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/groupChoose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已选择0个组,点击选择？"
+            android:textColor="@color/white"
+            android:textSize="24dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/online_number"
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:background="@drawable/radius_white"
+                android:gravity="center"
+                android:hint="6位工号"
+                android:maxLength="6"
+                android:singleLine="true"
+                android:textColor="#7FFFD4"
+                android:textSize="35sp">
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/online_name"
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:background="@drawable/radius_white"
+                android:gravity="center"
+                android:hint="姓名"
+                android:maxLength="8"
+                android:singleLine="true"
+                android:textColor="#7FFFD4"
+                android:textSize="35sp">
+            </EditText>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/online_pick"
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn"
+                android:text="选图"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/online_camera"
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn"
+                android:text="拍照"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/online_reg"
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn"
+                android:text="注册"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/online_delete"
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:background="@drawable/btn"
+                android:text="删除"
+                android:textColor="#FFFFFF"
+                android:textSize="35sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

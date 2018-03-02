@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_group_manage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglight"
+    android:orientation="vertical"
+    tools:context=".GroupManageActivity">
+
+    <include layout="@layout/common_app_bar"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.example.facedoor.ui.DropEditText
+                xmlns:drop="http://schemas.android.com/apk/res/com.example.facedoor"
+                android:id="@+id/drop_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                drop:drawableRight="@drawable/drop"
+                drop:dropMode="flower_parent"
+                drop:hint="创建请输入组名|添加请输入组编号"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="18dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btn_create"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn"
+                        android:text="创建"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btn_delete"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn"
+                        android:text="删除"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <Button
+                        android:id="@+id/btn_add"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn"
+                        android:text="添加"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:text="数据库IP相关"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:background="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_dbip"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="数据库服务器IP"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_dbip"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_dbAgent"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="数据库代理IP"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_dbAgent"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:text="门禁服务器相关"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:background="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_doorip"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="门禁服务器IP"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_doorip"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_doorController"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="门禁控制器内部编号"
+                            android:maxLength="4"
+                            android:numeric="integer"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_doorController"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_openTime"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="开门时间"
+                            android:maxLength="4"
+                            android:numeric="integer"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_openTime"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:text="平台设置相关"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:background="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_platformIP"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="平台IP"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_platformIP"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_doorNum"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="门的编号"
+                            android:maxLength="6"
+                            android:numeric="integer"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_doorNum"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_voiceValue"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="声纹阈值"
+                            android:maxLength="6"
+                            android:numeric="integer"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_voiceValue"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_detectTimeValue"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="视频流检测时长(s)"
+                            android:maxLength="6"
+                            android:numeric="integer"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_detectTimeValue"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:text="私有云服务相关"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:background="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <EditText
+                            android:id="@+id/et_personnalip"
+                            android:layout_width="300dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/radius_white"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="私有云IP"
+                            android:textColorHint="@color/password"
+                            android:textSize="20sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:layout_weight="2"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/btn_personnalip"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn"
+                            android:text="设置"
+                            android:textColor="@color/white"
+                            android:textSize="25sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:text="验证模式设置"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:background="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="600dp"
+                            android:layout_height="match_parent"
+                            android:background="#7FFFD4"
+                            android:entries="@array/mode"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:text="人脸检测模式"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="@dimen/margin_12"
+                        android:background="#ffffff"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="600dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="3"
+                        android:gravity="center_horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinnerFaceDetect"
+                            android:layout_width="600dp"
+                            android:layout_height="match_parent"
+                            android:background="#7FFFD4"
+                            android:entries="@array/modeFace"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

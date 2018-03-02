@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:descendantFocusability="blocksDescendants"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_group"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginRight="80dp">
+
+            <TextView
+                android:id="@+id/GroupName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="中用："
+                android:textSize="25sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/groupId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_toRightOf="@+id/GroupName"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:text="324242525"
+                android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_delete"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/delete"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

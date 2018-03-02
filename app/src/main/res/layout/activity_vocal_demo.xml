@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/bglight"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+    <include layout="@layout/common_app_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="@string/vocalverityactivity"
+        android:textColor="#FFFFFF"
+        android:textSize="35sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="120dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/vocal_edt_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:gravity="center"
+            android:maxLines="4"
+            android:minLines="4"
+            android:textColor="#FFFFFF"
+            android:textSize="50sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--        <Button
+                   android:id="@+id/btn_vocal_reg"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="@string/moxing"
+                   android:textColor="#D2691E" />
+
+               <Button
+                   android:id="@+id/btn_vocal_press_to_talk"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:text="@string/presstotalk"
+                   android:textColor="#D2691E" /> -->
+
+        <Button
+            android:id="@+id/press_to_talk"
+            android:layout_width="350dp"
+            android:layout_height="80dp"
+            android:background="@drawable/btn"
+            android:text="按住说话"
+            android:textColor="#7FFFD4"/>
+    </LinearLayout>
+
+</LinearLayout>
