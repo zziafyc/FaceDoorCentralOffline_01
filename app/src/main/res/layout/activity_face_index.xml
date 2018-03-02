@@ -9,7 +9,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="520dp"
+        android:layout_height="480dp"
         android:background="@mipmap/face"
         android:visibility="visible"/>
 
@@ -21,13 +21,18 @@
         android:layout_marginTop="40dp"
         android:layout_weight="0.16">
 
-
         <ImageView
             android:id="@+id/afi_click_img"
-            android:layout_width="350dp"
-            android:layout_height="350dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
             android:layout_centerInParent="true"
-            android:background="@mipmap/face2"/>
+            android:src="@drawable/face_1"/>
+        <!-- <ImageView
+             android:id="@+id/afi_click_img"
+             android:layout_width="350dp"
+             android:layout_height="350dp"
+             android:layout_centerInParent="true"
+             android:background="@mipmap/face2"/>-->
 
         <TextView
             android:id="@+id/wakeTv"

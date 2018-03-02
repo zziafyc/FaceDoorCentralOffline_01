@@ -17,6 +17,9 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.PopupWindow;
@@ -190,6 +193,8 @@ public class FaceIndexActivity extends BaseAppCompatActivity implements DialogIn
                     }
                     Log.e(TAG, "mInputText : " + text);
                     if (text.equals(wakeUpString)) {
+                        //启动动画
+                        startAnimator();
                         try {
                             Thread.sleep(2000);
                         } catch (InterruptedException e) {
@@ -197,6 +202,12 @@ public class FaceIndexActivity extends BaseAppCompatActivity implements DialogIn
                         }
                         Intent intent = new Intent(FaceIndexActivity.this, VideoDetect.class);
                         startActivity(intent);
+                        runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+                                clickImg.clearAnimation();
+                            }
+                        });
                     }
 
                 } catch (JSONException e) {
@@ -207,6 +218,23 @@ public class FaceIndexActivity extends BaseAppCompatActivity implements DialogIn
 
             }
         }
+    }
+
+    private void startAnimator() {
+        final Animation circle_anim = AnimationUtils.loadAnimation(FaceIndexActivity.this, R.anim.animal_index2);
+        LinearInterpolator interpolator = new LinearInterpolator();  //设置匀速旋转，在xml文件中设置会出现卡顿
+        circle_anim.setInterpolator(interpolator);
+        if (circle_anim != null) {
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    wakeTv.setText("准备识别.......");
+                    clickImg.startAnimation(circle_anim);  //开始动画
+                }
+            });
+
+        }
+
     }
 
     public void sendHiMessage() {
